@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    background-color: #EDEDED;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif ;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+#navbar a{
+    color: #00ADB5;
+    text-decoration: none;
+    
+}
+#navbar{
+    background-color: #444444;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    
+}
+
+#navbar ul{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#welcome-section, #projects, #contact{
+    height :100vh;
+}
+
+#welcome-section{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects {
+    background-color: #71C9CE ;
+    text-align: center;
+    padding: 50px;
+    height: auto;
+}
+
+.project-title{
+    background-color: #00ADB5 ;
+    margin: 50px 0;
+   
+}
+ img{
+    width: 100%;
+}
+
+#contact{
+    text-align: center;
+    padding: 40% 0;
+    line-height: 2;
+    height: 100vh;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+.social-media-links{
+    padding: 3rem;
+    font-size: 1.2rem;
+}
+
+footer{
+    background-color:#444444 ;
+    padding: 15px 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+}
+
+
+@media (min-width:600px) {
+
+    #navbar{
+        font-size: 1.5rem
+    }
+    #navbar ul{
+        height: 70px;
+        justify-content: flex-end;
+    }
+    #navbar li{
+        padding-right: 50px;
+    }
+   
+    .project-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 50px;
+
+    }
+    .project-title{
+        margin: 10px;
+        width: 100%;
+    }
+
+    .project-title a{
+    }
+
+    #contact{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social-media{
+      margin-top: 100px;
+    }
+    
+}
